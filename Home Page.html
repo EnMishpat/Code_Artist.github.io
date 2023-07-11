@@ -6,21 +6,66 @@
         <meta name="description" content="web app developer, web site creater, architect, my personal web site to show the world who I am">
         <style>
             /* this is where I need to format the style for my Home page*/
+            *{
+                margin: 0;
+                Padding: 0;
+            }
+            body{ background-color:lightblue;
+            }
+            section.name{
+                background-color: rgb(221, 177, 177);
+                margin-top: 35%;
+                margin-left: 3%;
+                width:30%;
+                font-family: arial, helvetica, sans-serif;
+                padding: 10px;
+                border: solid black 1px;
+            }
+            section.name h3{
+                text-align: center;                
+                font-weight: bold;
+                text-decoration: none;            
+                }
+            section.name a:hover{
+                color: pink;
+
+            }
+            section.topics ul.topic h3{
+                    text-align: left;
+                    margin-left: 80%;
+                    list-style: none;
+                    color: black;
+                   
+                    
+                }
+            section.topics ul.topic p{
+                    margin-left: 80%;
+                    color: black;
+                    font-family:'Times New Roman', Times, serif;
+                    font-size: 11px;
+            }
+            section.topics ul.topic a:hover{
+                color:rgb(244, 252, 8);
+            }
+            h3 a{
+                color:black;
+                text-decoration: none;
+            }
         </style>
     </head>
     <body>
         <header>
 
         </header>
-        <section class="Name">
-            <h2>Zachary Fontaine</h2>
+        <section class="name">
+            <h3><a href="">Zachary Fontaine</a></h3>
             <p>"I want to create a virtual place where people from all walks of life can connect."</p>
         </section>
-        <section class="Topic">
+        <section class="topics">
             <ul class="topic">
-                <li><a href=""><h3>Resume</h3></a>
+                <li><h3><a href="">Resume</a></h3>
                 <p>The places and people we work with help shape our future</p></li>
-                <li><a href=""><h3>My Story</h3></a>
+                <li><h3><a href="">My Story</a></h3>
                 <p>How I becme the developer I am Today</p></li>
             </ul>
         </section>
