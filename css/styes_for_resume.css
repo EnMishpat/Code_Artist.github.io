@@ -17,6 +17,8 @@ body{
 }
 
 main{
+    display: flex;
+    justify-content: space-between;
     width:80%;
     height: 70vh;
     border: 2px solid black;
@@ -25,9 +27,9 @@ main{
 }
 
 div.name{
-    float: left;
+    
     background-color: rgb(221, 177, 177);
-    margin-left: 0;
+    
     margin-top:10%;
     width:8em;
     font-family: arial, helvetica, sans-serif;
@@ -52,22 +54,21 @@ div.name p{
 }
 
 div.topics{
-    float:right;
-    margin-right:5%;
-    margin-top: 10%;
+    padding: 2px;
+    width: 8em;
+    border: 1px solid black;
+
 }
 
 div.topics ul{
     list-style: none;
 }
 div.topics ul.topic h3{
-        text-align: left;
-        margin-left: 80%;                    
+        text-align: left;                   
         list-style: none;
         color: black;              
     }
 div.topics ul.topic p{
-        margin-left: 80%;
         text-align: left;
         color: black;
         font-family:'Times New Roman', Times, serif;
