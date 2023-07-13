@@ -23,13 +23,12 @@ main{
     height: 70vh;
     border: 2px solid black;
     margin:auto auto;
-    background-image: https://www.facebook.com/photo.php?fbid=10160704605851726&set=t.1327263227&type=3;
-}
+    }
 
 div.name{
     
     background-color: rgb(221, 177, 177);
-    
+    height: 8em;
     margin-top:10%;
     width:8em;
     font-family: arial, helvetica, sans-serif;
