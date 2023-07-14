@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UFT-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="this is how you can get in contact with me with any questions, coments, idea, or ask for a quote">
+        <title>Contact Information</title>
+        
+    </head>
+    <body>
+        <header>Code Artist Contact Form</header>
+        <form id="contact_info" action="#" method="post"></form>
+            <feildset>
+                <legend>Contact Information</legend>
+                <ul>
+                    <li>
+                        <label for="firstname">Fist name:</label>
+                        <input name="firstname" id="firstname" placeholder="John" type="text">
+                    </li>
+                    <li>
+                        <label for="lastname">Last Name:</label>
+                        <input name="lastname" id="lastname" placeholder="Doe" type="text">
+                    </li>
+                    <li>
+                        <label for="email">Enter your email:</label>
+                        <input name="email" id="email" placeholder="info@gmail.com" type="email">
+                    </li>
+                    <li>
+                        <label for="phone">Phone Number:</label>
+                        <input type="text" name="phone" id="phone" placeholder="919-123-1234">
+                        <label for="phone_type"></label>
+                        <select id="phone_type" name="phone_type">
+                            <option value="cell">cell</option>
+                            <option value="home">home</option>
+                            <option value="work">work</option>
+                        </select>
+                    </li>
+                    <li>
+                        Preferred Contact Type
+                        <div>
+                            <input type="radio" name="contactType" value="phone">Phone
+                        </div>
+                        <div>
+                            <input type="radio" name="contactType" value="email">Email
+                        </div>
+                        <div>
+                            <input type="radio" name="contactType" value="text">Text
+                        </div>
+                    </li>
+                    <li>
+                        Products
+                        <div>
+                            <input type="checkbox" name="webSite" value="web_site">Web Site
+                        </div>
+                        <div><input type="checkbox" name="webApp" value="web_app">Web App
+                        </div>
+                    </li>
+                </ul>
+            </feildset>
+        <ul>
+            <li>
+                <label name="message">Additional Comments</label><br>
+                <textarea id="message" rowes="5" cols="20" placeholder="Sample Text"></textarea><br>
+            </li>
+            <li>
+                <button type="submit">Submit</button>
+            </li>
+        </form>
+    </body>
+</html>

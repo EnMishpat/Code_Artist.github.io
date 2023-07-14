@@ -13,7 +13,7 @@ header{
 
 body{ 
     background-color:lightblue;
-    
+    background-image:"C:\Users\zgfon\Downloads\codeArtbackground.jpg" ;
 }
 
 main{
@@ -89,7 +89,7 @@ div.dreams{
     margin-bottom:2%;
 }
 div.dreams span.dreams{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Nanum Myeongjo', serif;
     font-size:xx-large;
     font-weight: 400;
     text-transform: uppercase;
