@@ -12,16 +12,19 @@
         <title>Contact Information</title>
     <style>
         body{
-            background-color: rgb(242, 239, 234);
+            background-color: white;
+        }
+        nav, .form1, .formTitle, .breadCrumb{
+            background-color: whitesmoke;
         }
         .formTitle{
             font-size: 30px;
             text-align: center;
             color: black;
-            border: 1 px solid gray;
-            background: rgb(34,193,195);
-            background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
-            padding: 2px;
+            border: 1px solid gray;
+            background: rgb(232,238,174);
+            background: radial-gradient(circle, rgba(232,238,174,1) 16%, rgba(148,187,233,1) 76%);
+            padding: 0;
             margin: auto auto;
             height: 50px;
             font-family: 'Nanum Myeongjo', serif;
@@ -33,7 +36,7 @@
             clear: both;  
             margin-left:13%;
             margin-right:13%;
-            background-color: rgb(241, 232, 214);
+           
         }
         nav ol{
             display: flex;
@@ -66,7 +69,10 @@
                 border: 1px solid blue;
                 margin-left:13%;
                 margin-right:13%;
-                background-color: rgb(241, 232, 214);
+                
+            }
+            .breadCrumb ul{
+                margin-left:5px;
             }
             .breadCrumb li:after{
                 content:'/';
@@ -87,7 +93,7 @@
                 border: 1px solid yellow;
                 margin-left:13%;
                 margin-right:13%;
-                background-color: rgb(241, 232, 214);
+               
             }
             .contactInfo{
                 list-style: none;        
@@ -115,6 +121,18 @@
                 height:10em;
                 width: 90%;
 
+            }
+            .contactInfo input:valid,
+            textarea:valid{
+                border-bottom-color: green;
+            }
+            input:invalid,
+            textarea:invalid{
+                border-bottom-color: red;
+            }
+            .contactInfo input{
+                border:0;
+                border-bottom:1px solid gray;                              
             }
         </style>
     </head>
@@ -156,21 +174,21 @@
                 <ul class="contactInfo">
                     <li>
                         <label for="firstname">Fist name:</label>
-                        <input name="firstname" id="firstname" placeholder="John" type="text">
+                        <input name="firstname" id="firstname" placeholder="John" type="text" required>
                     </li>
                     <li>
                         <label for="lastname">Last Name:</label>
-                        <input name="lastname" id="lastname" placeholder="Doe" type="text">
+                        <input name="lastname" id="lastname" placeholder="Doe" type="text" required>
                     </li>
                     <li>
                         <label for="email">Enter your email:</label>
-                        <input name="email" id="email" placeholder="info@gmail.com" type="email">
+                        <input name="email" id="email" placeholder="info@gmail.com" type="email" required>
                     </li>
                     <li>
                         <label for="phone">Phone Number:</label>
-                        <input type="text" name="phone" id="phone" placeholder="919-123-1234">
+                        <input type="text" name="phone" id="phone" placeholder="919-123-1234" required>
                         <label for="phone_type"></label>
-                        <select id="phone_type" name="phone_type">
+                        <select id="phone_type" name="phone_type" required>
                             <option value="cell">cell</option>
                             <option value="home">home</option>
                             <option value="work">work</option>
