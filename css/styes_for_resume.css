@@ -94,3 +94,21 @@ div.dreams span.dreams{
     font-weight: 400;
     text-transform: uppercase;
 }
+
+/* CSS stylesheet for contactForm*/
+
+header div.formTitle{
+    text-align: center;
+    color: black;
+    border: 1 px solid gray;
+    padding: 2px;
+    margin: auto auto;
+}
+ol.nav {
+    display: flex;
+    list-style: none;
+    border: 1px solid gray;
+    margin: 0;
+    padding: 3px;
+    text-align: center;
+    }
