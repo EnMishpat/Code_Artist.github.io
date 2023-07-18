@@ -96,7 +96,6 @@ div.dreams span.dreams{
 }
 
 /* CSS stylesheet for contactForm*/
-
 header div.formTitle{
     text-align: center;
     color: black;
@@ -104,7 +103,7 @@ header div.formTitle{
     padding: 2px;
     margin: auto auto;
 }
-ol.nav {
+nav ol{
     display: flex;
     list-style: none;
     border: 1px solid gray;
