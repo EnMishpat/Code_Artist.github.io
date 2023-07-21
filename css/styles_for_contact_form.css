@@ -1,0 +1,125 @@
+body{
+    background-color: white;
+}
+nav, .form1, .formTitle, .breadCrumb{
+    background-color: whitesmoke;
+}
+.formTitle{
+    font-size: 30px;
+    text-align: center;
+    color: black;
+    border: 1px solid gray;
+    background: rgb(232,238,174);
+    background: radial-gradient(circle, rgba(232,238,174,1) 16%, rgba(148,187,233,1) 76%);
+    padding: 0;
+    margin: auto auto;
+    height: 50px;
+    font-family: 'Nanum Myeongjo', serif;
+    margin-left:13%;
+    margin-right:13%;
+}
+
+nav{
+    clear: both;  
+    margin-left:13%;
+    margin-right:13%;
+   
+}
+nav ol{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;            
+    margin: 0;
+    padding: 3px;
+    text-align: center;
+    height:30px;
+    }
+
+nav ol li{
+    width:15%;
+    height:fit-content;
+    margin:auto auto;
+    border: 1px solid black; /* TODO: change later for actual design*/
+    background-color: aliceblue;
+    
+    }
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.breadCrumb {
+        display: flex;
+        list-style: none;
+        text-align:center;                
+        margin-left:13%;
+        margin-right:13%;
+        
+    }
+    .breadCrumb ul{
+        margin-left:5px;
+    }
+    .breadCrumb li:after{
+        content:'/';
+        margin-left: 20px;
+    }
+    .breadCrumb li:last-child:after{
+        content:""
+    }
+    .breadCrumb a{
+        color:black;
+        text-decoration: none;
+    }
+    .breadCrumb a:hover{
+        text-decoration: underline;
+    }
+   
+    .form1{
+        
+        margin-left:13%;
+        margin-right:13%;
+       
+    }
+    .contactInfo{
+        list-style: none;        
+        line-height: 1.5;
+    }
+   #emial,#fistName,#lastName{
+    width:100%;
+   }
+    .preferredContact{
+        display: flex;
+        
+    }
+    .preferredContact div {
+        margin-left:20px;
+    }
+    .products{
+        display: flex;                
+    }
+    .products div{
+        margin-left:20px;
+    }
+    
+    .additionalComments{
+        list-style: none;
+        line-height: 1.5;
+    }
+    .additionalComments textarea{
+        height:10em;
+        width: 90%;
+
+    }
+    .contactInfo input:valid,
+    textarea:valid{
+        border-bottom-color: green;
+    }
+    input:invalid,
+    textarea:invalid{
+        border-bottom-color: red;
+    }
+    .contactInfo input{
+        border:0;
+        border-bottom:1px solid gray;     
+        width: 200px;                      
+    }
