@@ -17,7 +17,7 @@
         <header>
             <div class="formTitle">Code Artist Contact Form</div>
             <nav>
-                <ol class="nav">
+                <ol class="nav" name="navigation">
                     <li><a href="C:\Users\zgfon\OneDrive\Desktop\GitHub Repositorys\Code_Artist.github.io\Home Page.html">Home</a></li>
                     <li>
                         <a href="C:\Users\zgfon\OneDrive\Desktop\GitHub Repositorys\Code_Artist.github.io\child pages\resume.html">Resume</a>
@@ -49,22 +49,22 @@
             <feildset>
                 <legend>Contact Information</legend>
                 <ul class="contactInfo">
-                    <li>
-                        <label for="firstname">First name:</label>
+                    <li >
+                        <label id="label" for="firstname">First name:</label>
                         <input name="firstname" id="firstname" placeholder="John" type="text" required>
                     </li>
                     <li>
-                        <label for="lastname">Last Name:</label>
+                        <label  id="label" for="lastname">Last Name:</label>
                         <input name="lastname" id="lastname" placeholder="Doe" type="text" required>
                     </li>
                     <li>
-                        <label for="email">Enter your email:</label>
+                        <label id="label" for="email">Enter your email:</label>
                         <input name="email" id="email" placeholder="info@gmail.com" type="email" required>
                     </li>
                     <li>
-                        <label for="phone">Phone Number:</label>
+                        <label id="label" for="phone">Phone Number:</label>
                         <input type="text" name="phone" id="phone" placeholder="919-123-1234" required>
-                        <label for="phone_type"></label>
+                        
                         <select id="phone_type" name="phone_type" required>
                             <option value="cell">cell</option>
                             <option value="home">home</option>
@@ -97,14 +97,16 @@
                     </li>
                 </ul>
             </feildset>
-        <ul class="additionalComments">
-            <li>
+        <div class="additionalComments">
                 <label name="message">Additional Comments</label><br>
                 <textarea id="message" rowes="5" cols="20" placeholder="Sample Text"></textarea><br>
-            </li>
-            <li>
-                <button type="submit">Submit</button>
-            </li>
+        </div>
+        <div class="submit">
+            
+           <button type="submit">Submit</button>
+        
+        </div>
+            
         </form>
         </div>
     </body>
